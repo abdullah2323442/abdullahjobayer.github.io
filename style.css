@@ -1,0 +1,457 @@
+body{
+	background-color: #A8D8EA;
+	color: #001628;
+	padding-top: 80px;
+}
+body {
+	background-color: #A8D8EA;
+	animation: color-change 10s infinite;
+  }
+  
+  @keyframes color-change {
+	0% { background-color: #A8D8EA; }
+	50% { background-color: #facf59; }
+	100% { background-color: #A8D8EA; }
+  }
+  
+.typeo {
+    font-size: smaller;
+	text-align: center;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.15em solid #001628; /* The typewriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.15em; /* Adjust as needed */
+	animation:
+	  typing 3.5s steps(30, end),
+	  blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing animation */
+  @keyframes typing {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: 100%;
+	}
+  }
+  
+  /* The typewriter cursor animation */
+  @keyframes blink-caret {
+	from, to {
+	  border-color: transparent;
+	}
+	50% {
+	  border-color: #001628;
+	}
+  }
+  
+.typewriter {
+	font-size: medium;
+	font-weight: bolder;
+	text-align: center;
+	text-decoration: underline;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.15em solid #001628; /* The typewriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.15em; /* Adjust as needed */
+	animation:
+	  typing 3.5s steps(30, end),
+	  blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing animation */
+  @keyframes typing {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: 100%;
+	}
+  }
+  
+  /* The typewriter cursor animation */
+  @keyframes blink-caret {
+	from, to {
+	  border-color: transparent;
+	}
+	50% {
+	  border-color: #001628;
+	}
+  }
+  img {
+	aspect-ratio: 1/1; /* 16:9 aspect ratio */
+  }
+.design-item {
+	position: relative;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .design-item:hover {
+	transform: scale(1.1);
+  }
+  
+  .design-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  .design-item .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .design-item:hover .overlay {
+	opacity: 1;
+  }
+  
+  .design-item .overlay-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #A8D8EA;
+  }
+  
+/* Navbar styles */
+
+
+
+
+label {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	align-items: center;
+  }
+/* Navbar styles */
+.navbar {
+	font-family: 'Montserrat', sans-serif;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem 0;
+	border-bottom: 1px solid #2c2f3e;
+	border-top: 0px;
+	display: flex;
+	font-size: 20px;
+	color: #A8D8EA;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #001628;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1030;
+	transition: all 0.3s ease-in-out;
+  }
+  .nav-link, .nav-link:hover, .nav-link:focus {
+    color: white;
+}
+
+.nav-list {
+    color: white;
+}
+  .navbar-header {
+	text-align: left;
+  }
+  
+  .navbar:hover {
+	background-color: #A8D8EA;
+	color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-link {
+	color: white;
+	margin-right: 20px; /* add margin to the right to separate the links */
+  }
+  
+  .navbar-brand {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 28px;
+  }
+  
+  .navbar-brand img {
+	margin-top: 0;
+	width: 100px;
+	height: 100px;
+  }
+  
+  .navbar-nav {
+	display: flex;
+	align-items: center;
+  }
+  
+  .nav-list {
+	position: relative;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .nav-item {
+	position: relative; /* set position to relative for ::before pseudo-element */
+	padding: 1rem; /* reduce padding to make the underline more visible */
+}
+.nav-item::before {
+	content: ""; /* add empty content to ::before pseudo-element */
+	position: absolute; /* position the underline */
+	bottom: 0; /* set position to bottom of the nav-item */
+	left: 0; /* set position to start of the nav-item */
+	height: 2px; /* set height of the underline */
+	width: 0; /* set width to 0 to start */
+	background-color: #fff; /* set background color to match active color */
+	transition: width 0.3s ease-in-out; /* add transition effect */
+}
+
+.nav-item.active::before,
+.nav-item:hover::before {
+	width: 100%; /* set width to 100% to slide the underline */
+}
+  
+
+
+/* Fix label alignment issue */
+
+label {
+	margin-top: 0;
+	margin-bottom: 0;
+	align-items: center;
+}
+
+
+
+/* Portfolio styles */
+.portfolio {
+	padding: 60px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	margin: 30px 0;
+	text-align: center;
+	flex: 1;
+}
+
+.item img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.item h3 {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.item p {
+	margin-top: 10px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+/* Footer styles */
+.footer {
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer p {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+footer {
+	font-family: 'Roboto', sans-serif;
+	background-image: linear-gradient(to bottom, #001628, #022240);
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #333;
+	color: #fff;
+	padding: 5px;
+	transition: all 0.5s ease-in-out;
+  }
+  .footer:hover {
+	background-color: #A8D8EA;
+	color: #A8D8EA;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .footers{
+	margin-bottom: 0px;
+	background-color: #f5f5f5;
+	border-top: 1px solid #ddd;
+	padding: 20px 0;
+	text-align: center;
+  }
+  .footers p {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.footers {
+	font-family: 'Roboto', sans-serif;
+	background-image: linear-gradient(to bottom, #001628, #022240);
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	transition: all 0.5s ease-in-out;
+	margin-top: 200px;
+  }
+  .footers:hover {
+	background-color: #3befb0;
+	color: #1e90ff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .social-media {
+	margin: 0 10px;
+  }
+  
+  .social-media{
+	color: #fff;
+	font-size: 24px;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .social-media:hover {
+	color: #A8D8EA;
+	transform: scale(1.2);
+  }
+.thank{
+	text-align: center;
+}
+.lead{
+	text-align: center;
+}
+ul li {
+	display: inline-block;
+	margin-right: 10px; 
+  }
+  
+  ul li:last-child {
+	margin-right: 0; /* remove margin for the last icon */
+  }
+  .navbar-nav li a {
+	color: #ffffff;
+  }
+  .img-responsive {
+	position: relative;
+	overflow: hidden;
+	border: 4px solid white;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+	transition: all 0.5s ease-in-out;
+	animation: border-animation 2s ease-in-out infinite;
+  }
+  
+  .img-responsive:hover {
+	transform: scale(1.1);
+
+  }
+@keyframes border-animation {
+  0% {
+    border-color: #001628;
+    border-width: 2px;
+  }
+  50% {
+    border-color: #fff;
+    border-width: 4px;
+  }
+  100% {
+    border-color: #000;
+    border-width: 2px;
+  }
+}
+.thank{
+    text-align: center;
+    overflow: hidden; /* to hide the text before the animation */
+    white-space: nowrap; /* to keep the text on one line */
+    border-right: .15em light #A8D8EA; /* the cursor effect */
+    animation: typing 3s steps(30, end) forwards; /* the animation itself */
+}
+/* the animation keyframes */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+li{
+	color: #fff;
+}
+a{
+	color: #fff;
+}
+
+#chat-section {
+	background-color: #f5f5f5;
+	padding: 20px;
+  }
+  
+  #chat-section .container {
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  #chat-section #chat-box {
+	height: 400px;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+  }
+  
+  #chat-section .message {
+	margin-bottom: 10px;
+  }
+  
+  #chat-section .user-message {
+	background-color: #fff;
+	color: #333;
+	padding: 10px;
+	border-radius: 5px;
+	display: inline-block;
+	max-width: 70%;
+  }
+  
+  #chat-section .ai-message {
+	background-color: #f2f2f2;
+	color: #333;
+	padding: 10px;
+	border-radius: 5px;
+	display: inline-block;
+	max-width: 70%;
+  }
+  

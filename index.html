@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MD Abdullah Jobayer's Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+	<script>
+		const navLinks = document.querySelectorAll('.nav-link');
+		navLinks.forEach(link => {
+			link.addEventListener('click', () => {
+				navLinks.forEach(link => link.classList.remove('active'));
+				link.classList.add('active');
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img src="https://i.postimg.cc/D0tTDjq4/Black-White-Vintage-Retro-Studio-Brand-Logo.png" alt="logo">
+				</a>
+			</div>
+			<nav>
+				<ul class="nav-list">
+                    <li class="nav-item active">Home</li>
+					<li class="nav-item"><a href="./portfolio.html">Designs</a></li>
+					<li class="nav-item"><a href="./thankyouportfolio.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header><br>
+
+	<section class="hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="https://i.postimg.cc/mr9hy932/IMG-0954.jpg"><img class="img-responsive"
+							src="https://i.postimg.cc/mr9hy932/IMG-0954.jpg" height="800" width="400"
+							alt="Your Photo"></a>
+				</div><br>
+				<div class="col-md-6">
+					<h1>Hello, I'm MD Abdullah Jobayer</h1>
+					<p>I'm a Graphic Designer.I live in Chattagram,Bangladesh.Currently I am doing Graduation.</p>
+					<p><a class="btn btn-primary" href="./portfolio.html">View My Portfolio</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h2>About Me</h2>
+					<p>I am currently working as a Graphic Design intern in different organizations.</p>
+					<p><a class="btn btn-primary" href="https://pdfhost.io/v/6JJar41l4_RESUME_DESIGN">Download My
+							Resume</a></p>
+				</div><br>
+				<div class="col-md-4">
+					<h2>My Skills</h2>
+					<p>Graphic Design</p>
+					<p>Web Design</p>
+					<p>Branding</p>
+				</div>
+				<div class="col-md-4">
+					<h2>My Contact Information</h2>
+					<p>MD Abdullah Jobayer</p>
+					<p>abdullahjobayernavid@gmail.com</p>
+					<p>+8801537474560</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<footer class="footers">
+		<div class="container">
+			<p>Copyright © MD Abdullah Joabyer
+				<br>All Rights Reserved
+			</p>
+		</div>
+	</footer>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
